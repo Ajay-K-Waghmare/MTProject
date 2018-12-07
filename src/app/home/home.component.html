@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let name of technologies">
+    <!-- <a routerLink='/technology/{{name}}'>{{name | uppercase}}</a> -->
+    <a [routerLink]="['/technology',name]">{{name | uppercase}}</a>
+  </li>
+</ul>

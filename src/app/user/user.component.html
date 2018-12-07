@@ -1,0 +1,32 @@
+<!-- This is parent components` html -->
+<div class="container">
+    <div class="row">
+        <!-- Left side child component , right side parent component
+        first we pass all item in child component one by one(from parent component html) using @Input property and displaying all
+        items in child component(user-details.component.html).
+        And then on click of any item in child template we are displaying details of that particular item 
+        in parent components` html (user.component.html) -->
+        <div class="col-6">
+    <div *ngIf="loading">Loading..</div>
+    
+
+    <div *ngFor="let item of results">
+   
+        <app-user-details [item]="item" (notify)="handleNotify($event)"></app-user-details>
+      
+    </div>
+    
+        </div>
+        <div class="col-6">
+                <div *ngIf="dataFromChild" class="sticky">
+                    {{dataFromChild.owner.login}}
+                  
+                  
+                </div>
+                
+                        </div>
+</div>
+</div>
+
+
+

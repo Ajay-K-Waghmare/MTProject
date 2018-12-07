@@ -1,0 +1,39 @@
+
+    /* img{
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5px;
+    } */
+    /* ul{
+        list-style-type: none;
+    }
+  ul li a{
+       text-decoration: none;
+      text-align: center;
+     
+   } */
+
+   /* ul li {
+       margin : 5px;
+       max-width: 150px;
+       border: 2px solid blueviolet;
+   }
+   */
+   /* #detail{
+      min-width: 400px;
+       height: 200px;
+       background: yellowgreen;
+   } */
+   div.sticky{
+    position: sticky;
+    top: 5px;
+    background-color : whitesmoke;
+    min-width: 400px;
+    height: 200px;
+    border :2px solid red;
+    padding: 5px;
+    box-shadow: 5px 10px 20px red inset;
+   }

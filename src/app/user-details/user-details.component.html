@@ -1,0 +1,7 @@
+<div *ngIf="item">I am child</div>
+<div class="brdr">
+<a (click)="handleClick()">
+    <img src="{{item.owner.avatar_url}}">
+    <div>{{item.owner.login}}</div>
+ </a>
+</div>
